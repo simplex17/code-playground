@@ -1,0 +1,8 @@
+<div class="console">
+    <h2 class="console__heading">Console</h2>
+    <div class="console__body">
+        @for (log of logs(); track $index) {
+            <div>{{ log.message }}</div>
+        }
+    </div>
+</div>

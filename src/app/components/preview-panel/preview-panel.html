@@ -1,0 +1,11 @@
+<div class="preview">
+    <h2 class="preview__heading">Preview</h2>
+    <as-split direction="vertical" gutterSize="6">
+        <as-split-area [minSize]="30" [size]="50">
+            <iframe [srcdoc]="iFrameDoc()" class="preview__iframe"></iframe>
+        </as-split-area>
+        <as-split-area [minSize]="30" [size]="50">
+            <app-console-panel></app-console-panel>
+        </as-split-area>
+    </as-split>
+</div>

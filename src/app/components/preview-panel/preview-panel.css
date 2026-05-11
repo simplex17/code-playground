@@ -1,0 +1,17 @@
+.preview {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 8px;
+}
+
+.preview__heading {
+    padding: 8px;
+}
+
+.preview__iframe {
+    border: none;
+    background-color: #ffffff;
+    height: 98%;
+    width: 100%;
+}

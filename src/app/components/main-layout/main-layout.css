@@ -1,0 +1,19 @@
+:host {
+    --as-gutter-background-color: #141414;
+}
+
+.container {
+    background-color: #141414;
+    color: #ffffff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container h1 {
+    padding: 16px;
+}
+
+.container div {
+    flex: 1;
+}

@@ -1,0 +1,46 @@
+<div class="editor">
+    <div class="editor__tabs">
+        <h2
+            class="editor__tab"
+            [ngClass]="activeTab() === 'html' ? 'active' : ''"
+            (click)="changeActiveTab('html')">
+            HTML
+        </h2>
+        <h2
+            class="editor__tab"
+            [ngClass]="activeTab() === 'css' ? 'active' : ''"
+            (click)="changeActiveTab('css')">
+            CSS
+        </h2>
+        <h2
+            class="editor__tab"
+            [ngClass]="activeTab() === 'js' ? 'active' : ''"
+            (click)="changeActiveTab('js')">
+            JS
+        </h2>
+        <button class="editor__run-btn" (click)="runCode()">Run</button>
+    </div>
+
+    @switch (activeTab()) {
+        @case ("html") {
+            <ngx-monaco-editor
+                [options]="{ ...OPTIONS, language: 'html' }"
+                [(ngModel)]="htmlCode">
+            </ngx-monaco-editor>
+        }
+
+        @case ("css") {
+            <ngx-monaco-editor
+                [options]="{ ...OPTIONS, language: 'css' }"
+                [(ngModel)]="cssCode">
+            </ngx-monaco-editor>
+        }
+
+        @case ("js") {
+            <ngx-monaco-editor
+                [options]="{ ...OPTIONS, language: 'javascript' }"
+                [(ngModel)]="jsCode">
+            </ngx-monaco-editor>
+        }
+    }
+</div>

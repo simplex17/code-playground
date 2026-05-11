@@ -1,0 +1,15 @@
+.console {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.console__heading {
+    padding: 8px;
+}
+
+.console__body {
+    flex: 1;
+    font-size: 16px;
+    padding: 8px;
+}

@@ -1,0 +1,15 @@
+<div class="container">
+    <header>
+        <h1>Code Playground</h1>
+    </header>
+    <div>
+        <as-split [direction]="direction()" gutterSize="6">
+            <as-split-area [minSize]="30" [size]="50">
+                <app-editor-panel></app-editor-panel>
+            </as-split-area>
+            <as-split-area [minSize]="30" [size]="50">
+                <app-preview-panel></app-preview-panel>
+            </as-split-area>
+        </as-split>
+    </div>
+</div>
